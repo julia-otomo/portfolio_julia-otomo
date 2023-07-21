@@ -16,7 +16,7 @@ export const Header = () => {
 
           <div className="hidden lg:flex lg:flex-row lg:gap-4">
             <HeaderButton local="home" title="Início" />
-            <HeaderButton local="about" title="Sobre mim" />
+            <HeaderButton local="about" title="Sobre" />
             <HeaderButton local="skills" title="Competências" />
             <HeaderButton local="experience" title="Experências" />
             <HeaderButton local="projects" title="Projetos" />
@@ -31,7 +31,7 @@ export const Header = () => {
       {!menu ? null : (
         <div className="fixed flex flex-col w-screen items-center bg-green-400 p-3 box-border gap-3 lg:hidden">
           <HeaderButton local="home" title="Início" />
-          <HeaderButton local="about" title="Sobre mim" />
+          <HeaderButton local="about" title="Sobre" />
           <HeaderButton local="skills" title="Competências" />
           <HeaderButton local="experience" title="Experências" />
           <HeaderButton local="projects" title="Projetos" />

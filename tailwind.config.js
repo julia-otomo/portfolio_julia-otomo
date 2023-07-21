@@ -6,6 +6,10 @@ export default {
     fontFamily: {
       sans: ["Roboto", "sans-serif"],
     },
+    maxWidth: {
+      bunny: "150px",
+    },
+
     extend: {},
   },
   plugins: [],
