@@ -2,7 +2,7 @@ import img from "../../assets/giphy.gif";
 
 export const Home = () => {
   return (
-    <div className="bg-blue-400" id="home">
+    <div className="bg-blue-400 " id="home">
       <div className="flex flex-col items-center">
         <div className="flex flex-col gap-5 items-center w-4/5 p-4 box-border">
           <h2>OLÁ ! EU SOU</h2>

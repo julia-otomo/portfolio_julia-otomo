@@ -28,16 +28,6 @@ export const Header = () => {
           </button>
         </div>
       </header>
-      {!menu ? null : (
-        <div className="fixed flex flex-col w-screen items-center bg-green-400 p-3 box-border gap-3 lg:hidden">
-          <HeaderButton local="home" title="Início" />
-          <HeaderButton local="about" title="Sobre" />
-          <HeaderButton local="skills" title="Competências" />
-          <HeaderButton local="experience" title="Experências" />
-          <HeaderButton local="projects" title="Projetos" />
-          <HeaderButton local="contact" title="Contato" />
-        </div>
-      )}
     </>
   );
 };

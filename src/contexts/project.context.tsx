@@ -14,14 +14,15 @@ export const ProjectProvider = ({ children }: iProjectProviderProps) => {
   const [menu, setMenu] = useState(false);
   const [load, setLoad] = useState(false);
   const [loadError, setLoadError] = useState(false);
+  const [moreProjects, setMoreProjects] = useState(true);
   const [projects, setProjects] = useState<iProjectInformation[]>([]);
 
   useEffect(() => {
     const getAllProjects = async () => {
       try {
+        setLoad(true);
         const allProjects = await api.get("/projects");
         setProjects(allProjects.data);
-        setLoad(true);
       } catch (error) {
         console.log(error);
         setLoadError(true);
@@ -36,7 +37,15 @@ export const ProjectProvider = ({ children }: iProjectProviderProps) => {
 
   return (
     <ProjectContext.Provider
-      value={{ menu, setMenu, load, loadError, projects }}
+      value={{
+        menu,
+        setMenu,
+        load,
+        loadError,
+        projects,
+        moreProjects,
+        setMoreProjects,
+      }}
     >
       {children}
     </ProjectContext.Provider>

@@ -26,4 +26,6 @@ export interface iProjectContextValue {
   load: boolean;
   loadError: boolean;
   projects: iProjectInformation[];
+  moreProjects: boolean;
+  setMoreProjects: React.Dispatch<React.SetStateAction<boolean>>;
 }

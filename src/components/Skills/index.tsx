@@ -8,11 +8,16 @@ export const Skills = () => {
       id="skills"
       className="flex flex-col items-center justify-center bg-purple-400"
     >
-      <div className="w-4/5 flex flex-col items-center bg-blue-400 p-4 box-border gap-5">
-        <h2>Competências</h2>
-        <ul className="bg-pink-400 w-full flex flex-row flex-wrap gap-5  justify-center p-4 box-border">
+      <div className="w-4/5 flex flex-col items-center  p-4 box-border gap-5">
+        <h2>COMPETÊNCIAS</h2>
+        <ul className=" w-full flex flex-row flex-wrap gap-5  justify-center p-4 box-border">
           {skillsIcons.map((skill) => (
-            <SkillCard id={skill.id} title={skill.title} image={skill.image} />
+            <SkillCard
+              id={skill.id}
+              title={skill.title}
+              image={skill.image}
+              key={skill.id}
+            />
           ))}
         </ul>
       </div>
