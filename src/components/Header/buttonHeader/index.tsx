@@ -17,6 +17,7 @@ export const HeaderButton = ({ local, title }: iLinkProps) => {
       duration={1000}
       onClick={() => setMenu(false)}
       offset={-64}
+      className="text-lg font-medium text-slate-50 transition hover:duration-700 hover:bg-pink-400 lg:p-2 lg:border-box cursor-pointer lg:rounded-lg"
     >
       {title}
     </Link>
