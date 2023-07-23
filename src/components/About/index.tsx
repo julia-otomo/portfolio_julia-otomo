@@ -1,3 +1,5 @@
+import img from "../../assets/thumbnail_IMG_5016.jpg";
+
 export const AboutMe = () => {
   return (
     <div className="bg-pink-200 flex flex-col items-center " id="about">
@@ -5,8 +7,19 @@ export const AboutMe = () => {
         <h2 className="text-center text-2xl font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent ">
           SOBRE MIM
         </h2>
-        <div className="flex flex-col items-center justify-center rounded-full w-52 h-52 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 animate-gradient">
-          <div className="bg-[url('../assets/thumbnail_IMG_5016.jpg')] bg-cover bg-center w-48 h-48 rounded-full"></div>
+        <div
+          className="flex flex-col items-center justify-center rounded-full bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 animate-gradient"
+          style={{ width: "11rem", height: "11rem" }}
+        >
+          <img
+            src={img}
+            style={{
+              width: "10rem",
+              height: "10rem",
+              borderRadius: "50%",
+              objectFit: "cover",
+            }}
+          ></img>
         </div>
 
         <h3 className="text-lg text-center font-medium text-purple-950 lg:text-xl lg:w-4/5">
